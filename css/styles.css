@@ -183,9 +183,15 @@ main .card .info-card hr {
     font-size: 11px;
   }
 }
-@media screen and (min-width: 1440px) {
-  body {
-    background-color: blue !important;
+@media screen and (min-width: 1270px) {
+  main .card .img-woman {
+    background-position: -60px 0px;
+  }
+  main .card .img-pattern {
+    background-position: -155px -90px;
+  }
+  main .card .info-card hr {
+    width: 97%;
   }
 }
 
