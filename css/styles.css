@@ -194,5 +194,10 @@ main .card .info-card hr {
     width: 97%;
   }
 }
+@media screen and (min-width: 1440px) {
+  main .card .img-pattern {
+    background-position: -170px -90px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
