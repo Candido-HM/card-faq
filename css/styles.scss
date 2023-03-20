@@ -1,0 +1,172 @@
+// Importar librerias para estilo de letras
+@font-face {
+    font-family: "KumbhSans-Regular";
+    src: url('/fonts/KumbhSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "KumbhSans-Bold";
+    src: url('/fonts/KumbhSans-Bold.ttf');
+}
+
+//MIXIONS
+@mixin styleInfo(){
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    font-family: KumbhSans-Regular;
+    font-size: 12px;
+    color: #4F4E54;
+
+    .img-arrow{
+        width: 10px;
+        height: 10px;
+        background: url('/images/icon-arrow-down.svg');
+        background-repeat: no-repeat;
+        float: right;
+    }
+}
+
+@mixin styleP(){
+    width: auto;
+    padding: 15px;
+    font-family: KumbhSans-Regular;
+    font-size: 12px;
+    color: #89888E;
+    display: none;
+}
+
+// Estilos generales
+body {
+    width:auto;
+    height: auto;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 10px;
+    background: linear-gradient(180deg, #AD66E6 0%, #7B64E8 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main {
+    width: auto;
+    height: 800px;
+
+    .card{
+        height: 800px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img-woman{
+            width: 190px;
+            height: 150px;
+            margin-top: 0px;
+            background: url('/images/illustration-woman-online-mobile.svg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: 3;
+        }
+
+        .img-pattern{
+            width: 190px;
+            height: 90px;
+            margin-top: -60px;
+            background: url('/images/bg-pattern-mobile.svg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: 2;
+        }
+
+        .info-card{
+            width: 100%;
+            height: auto;
+            margin-top: -90px;
+            background-color: white;
+            border-radius: 20px;
+            z-index: 1;
+
+            h1{
+                margin-top: 110px;
+                color: red;
+                font-family: KumbhSans-Bold;
+                text-align: center;
+                color: #1C1D31;
+                text-shadow: 1px 1px 2px #A3A2A8;
+                font-size: 30px;
+                font-weight: 900
+            }
+            
+            button {
+                @include styleInfo();
+            }
+
+            button:hover {
+                color: #D69F89;
+                cursor: pointer;
+            }
+
+            .activo {
+                font-weight: 900;
+                color: #262439;
+            }
+
+            .arrow-invertido{
+                transform: scaleY(-1);
+            }
+
+            p {
+                @include styleP();
+            }
+            
+            hr {
+                width: 95%;
+            }
+        }
+    }
+
+}
+
+#mi-elemento {
+    display: none; /* Ocultar por defecto */
+  }
+  
+  #mi-elemento:target {
+    display: block; /* Mostrar cuando se hace clic en el enlace */
+  }
+  
+
+// Mobile First
+@media screen and (min-width: 360px) {
+    body {
+        background-color: rebeccapurple !important;
+    }
+    
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: violet;
+    }
+    
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        background-color: green;
+    }
+    
+}
+
+@media screen and (min-width: 950px) {
+    body {
+        background-color: blue !important;
+    }    
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: blue !important;
+    }    
+}
