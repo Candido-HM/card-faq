@@ -138,16 +138,18 @@ main {
   
 
 // Mobile First
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 470px) {
     body {
-        background-color: rebeccapurple !important;
+        background-color: red;
     }
     
-}
-
-@media screen and (min-width: 480px) {
-    body {
-        background-color: violet;
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card {
+            width: 85%;
+        }
     }
     
 }
