@@ -111,9 +111,6 @@ main .card .info-card hr {
 }
 
 @media screen and (min-width: 470px) {
-  body {
-    background-color: red;
-  }
   main {
     display: flex;
     justify-content: center;
@@ -123,14 +120,34 @@ main .card .info-card hr {
     width: 85%;
   }
 }
-@media screen and (min-width: 767px) {
-  body {
-    background-color: green;
-  }
-}
 @media screen and (min-width: 950px) {
-  body {
-    background-color: blue !important;
+  main .card {
+    width: 80%;
+    height: 60%;
+    background-color: white;
+    flex-direction: row;
+  }
+  main .card .img-woman {
+    width: 200px;
+    height: 350px;
+    background: url("/images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 3;
+  }
+  main .card .img-pattern {
+    width: 250px;
+    height: 150px;
+    background: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+  }
+  main .card .info-card {
+    width: 90%;
+    height: 100%;
+    margin-top: 0px;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 1440px) {

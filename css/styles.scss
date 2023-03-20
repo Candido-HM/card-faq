@@ -139,10 +139,6 @@ main {
 
 // Mobile First
 @media screen and (min-width: 470px) {
-    body {
-        background-color: red;
-    }
-    
     main {
         display: flex;
         justify-content: center;
@@ -153,17 +149,40 @@ main {
     }
     
 }
-
-@media screen and (min-width: 767px) {
-    body {
-        background-color: green;
-    }
-    
-}
-
 @media screen and (min-width: 950px) {
-    body {
-        background-color: blue !important;
+    main {
+        .card {
+            width: 80%;
+            height: 60%;
+            background-color: white;
+            flex-direction: row;
+
+            .img-woman{
+                width: 200px;
+                height: 350px;
+                background: url('/images/illustration-woman-online-desktop.svg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                z-index: 3;
+            }
+
+            .img-pattern{
+                width: 250px;
+                height: 150px;
+                background: url('/images/bg-pattern-desktop.svg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                z-index: 2;
+
+            }
+
+            .info-card{
+                width: 90%;
+                height: 100%;
+                margin-top: 0px;
+                z-index: 1;
+            }
+        }
     }    
 }
 
