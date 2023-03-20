@@ -121,33 +121,55 @@ main .card .info-card hr {
   }
 }
 @media screen and (min-width: 950px) {
+  main {
+    width: 100%;
+    height: 100vh;
+  }
   main .card {
-    width: 80%;
-    height: 60%;
-    background-color: white;
+    width: 85%;
+    height: 70%;
     flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #A180CA;
+  }
+  main .card .cubo {
+    width: 95px;
+    height: 145px;
+    margin-top: 70px;
+    margin-left: -45px;
+    position: absolute;
+    background: url("/images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 4;
   }
   main .card .img-woman {
-    width: 200px;
-    height: 350px;
+    width: 45%;
+    height: 65%;
     background: url("/images/illustration-woman-online-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-position: -40px 0px;
     z-index: 3;
   }
   main .card .img-pattern {
-    width: 250px;
-    height: 150px;
+    width: 22%;
+    height: 70%;
+    position: absolute;
+    margin-top: 0px;
     background: url("/images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 150% 150%;
+    background-position: -115px -90px;
     z-index: 2;
   }
   main .card .info-card {
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin-top: 0px;
     z-index: 1;
+    background-color: gold;
   }
 }
 @media screen and (min-width: 1440px) {
